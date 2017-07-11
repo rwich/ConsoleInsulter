@@ -18,7 +18,7 @@ namespace ConsoleInsulter
                 choice = Convert.ToByte(Console.ReadLine());
                 if (choice == 0 || choice == 1 || choice == 2 || choice == 3)
                 {
-                    GetInsult(choice);
+                    PrintInsult(choice);
                 }
             }
             catch (Exception)
@@ -29,7 +29,7 @@ namespace ConsoleInsulter
             Console.ReadKey();
         }           
 
-        private static void GetInsult(int choice)
+        private static void PrintInsult(int choice)
         {
             switch (choice)
             {
